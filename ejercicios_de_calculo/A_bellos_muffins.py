@@ -27,3 +27,15 @@ Salida 7
 Si repartimos equitativamente, a cada quien le tocan 5 muffins. Así, de los 42 muffins
 que habían sobran 2. Por lo tanto Gil se queda con 5 + 2 = 7 muffins.
 """
+
+def calculo():
+       muffins = int(input())
+       amigos = int(input())
+       equitativo = muffins // amigos
+       resto = muffins % amigos
+       print(resto + equitativo)
+
+def main():
+       calculo()
+
+main()
