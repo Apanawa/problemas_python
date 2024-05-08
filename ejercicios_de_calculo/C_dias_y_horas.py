@@ -18,3 +18,13 @@ Entrada	Salida
 48      2 days 0 hours
 90      3 days 18 hours
 """
+def horas_a_dias():
+          horas = int(input())
+          dias = horas // 24
+          horas_restantes = horas % 24
+          print(f"{dias} days {horas_restantes} hours")
+
+def main():
+          horas_a_dias()
+
+main()
