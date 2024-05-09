@@ -9,7 +9,8 @@ Por ejemplo: Si la distancia es 100 Km y la velocidad promedio del carro son 80 
 El tiempo necesario para llegar es 1.25 hrs
 
 Input
-La distancia dada como número entero La velocidad promedio dada como un número entero
+La distancia dada como número entero 
+La velocidad promedio dada como un número entero
 
 Output
 El tiempo para llegar dado como un número flotante
@@ -18,6 +19,13 @@ Example
 Entrada	Salida
 150      1.5
 100
-
-
 """
+def tiempo_para_llegar(km, velocidad):
+          print(km/velocidad)
+
+def main():
+          km = int(input())
+          velocidad = int(input())
+          tiempo_para_llegar(km,velocidad)
+
+main()
