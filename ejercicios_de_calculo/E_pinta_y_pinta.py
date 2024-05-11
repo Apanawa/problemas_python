@@ -23,3 +23,17 @@ Entrada	Salida
 4.3
 2.7
 """
+def pintor(ancho,largo,altura):
+          paredes_ancho = ancho * altura
+          paredes_largo = largo * altura
+          techo = ancho * largo
+          suma = paredes_largo + paredes_largo + paredes_ancho + paredes_ancho + techo
+          print(suma*5)
+
+def main():
+          ancho = float(input())
+          largo = float(input())
+          altura = float(input())
+          pintor(ancho,largo,altura)
+
+main()
