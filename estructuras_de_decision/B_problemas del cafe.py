@@ -33,3 +33,24 @@ d       195
 s
 3
 """
+def caja_registradora(tipo_de_cafe, combo, cantidad):
+  total = 0
+  eleccion = 0
+  if tipo_de_cafe == "r":
+    eleccion = 30
+  elif tipo_de_cafe == "d":
+    eleccion = 35
+  elif tipo_de_cafe == "c":
+    eleccion = 50
+  if combo == "s":
+    eleccion += 30
+  total = cantidad * eleccion
+  print(total)
+
+def main():
+  tipo_de_cafe = input()
+  combo = input()
+  cantidad = input()
+  caja_registradora(tipo_de_cafe, combo, cantidad)
+
+main()
